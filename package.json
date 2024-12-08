@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "name": "algo",
+  "version": "1.0.0",
+  "description": "A collection of all my algo practice problems.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "robertrahardja",
+  "license": "ISC"
+}
