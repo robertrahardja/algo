@@ -78,14 +78,13 @@ const recursive = (maze, wall, curr, end, seen, path) => {
 }
 
 const main = (maze, wall, start, end) => {
-  const seen = []
   const path = []
 
   // initialize seen with false
-  for (let i = 0; i < maze.length; i++) {
-    seen.push(new Array(maze[0].length).fill(false))
-  }
-
+  // seen is a copy of maze
+  const seen = maze.map(pointedRow =>
+    Array.from({ length: pointedRow.length }).fill(false)
+  );
 
   recursive(maze, wall, start, end, seen, path)
   return path
