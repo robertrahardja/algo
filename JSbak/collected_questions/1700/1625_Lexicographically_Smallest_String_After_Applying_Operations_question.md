@@ -1,0 +1,3 @@
+1625_Lexicographically_Smallest_String_After_Applying_Operations
+# 1625. Lexicographically Smallest String After Applying Operations
+

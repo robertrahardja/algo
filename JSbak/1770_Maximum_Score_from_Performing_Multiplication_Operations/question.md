@@ -1,0 +1,3 @@
+1770_Maximum_Score_from_Performing_Multiplication_Operations
+# 1770. Maximum Score from Performing Multiplication Operations
+

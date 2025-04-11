@@ -23,6 +23,8 @@ function asc(a, b) {
 
   return a - b;
 }
+
+
 function desc(a, b) {
 
   return b - a;
@@ -43,6 +45,7 @@ console.log(ans5)
 
 
 const ansStr = strArr.sort();
+console.log(ansStr);
 const ansStr2 = strArr2.sort().reverse()
 console.log(ansStr2);
 

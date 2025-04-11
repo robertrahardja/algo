@@ -1,3 +1,22 @@
+// jest.setup.js
+// make all console.log calls yellow
+// const originalConsoleLog = global.console.log;
+//
+// global.console.log = (...args) => {
+//   const colorizeOutput = (arg) => {
+//     if (typeof arg === 'string') {
+//       return `\x1b[33m${arg}\x1b[0m`; // Yellow for strings
+//     }
+//     return arg;
+//   };
+//
+//   originalConsoleLog(...args.map(colorizeOutput));
+// };
+const originalLog = console.log;
+console.log = (...args) => originalLog(...args.map(arg =>
+  typeof arg === 'string' ? `\x1b[33m${arg}\x1b[0m` : arg
+));
+
 // main.test.js
 
 const mainArr = []
