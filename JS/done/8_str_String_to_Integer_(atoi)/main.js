@@ -2,7 +2,7 @@ const main = (s) => {
   const MAX = Math.pow(2, 31) - 1;
   const MIN = -Math.pow(2, 31);
 
-  const match = s.trim().match(/^[-+]?\b\d+/);
+  const match = s.trim().match(/^[-+]?\d+/);
 
   if (!match) return 0;
 
